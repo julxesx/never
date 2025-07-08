@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/icono.ico" type="image/x-icon">
+    <title>NEVER - Tienda</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+              <a href="../index.html">
+                <img src="imagenes/logo-never.png" alt="Logo Header" class="uploaded-logo">
+              </a>  
+            </div>
+            <div class="auth-buttons">
+                <a href="../Registrarse/register.html" class="register-btn">REGISTRARSE</a>
+                <a href="../Login/login.html" class="login-btn">INICIAR SESIÓN</a>
+                <a href="tienda.html">
+                <button class="store-btn">🛒 TIENDA</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <a href="tienda.html" class="nav-item">PRODUCTOS</a>
+        </div>
+    </nav>
+
+    <main>
+    <h1 class="titulo">TIENDA</h1>
+    <section class="productos">
+<a href="../hoodie/HOODIE.html">
+      <div class="producto">
+        <div class="imagen-producto">
+          <img src="imagenes/BUSO.png" alt="NEVER Hoodie">
+        </div>
+        <h2>NEVER HOODIE – UNISEX</h2>
+        <p>80.000 COP</p>
+        <div class="colores">
+          <span class="color rosado"></span>
+          <span class="color morado"></span>
+        </div>
+      </div>
+</a>
+<a href="../Gorro/gorro.html">
+ <div class="producto">
+        <div class="imagen-producto">
+          <img src="imagenes/GORRO.png" alt="NEVER Gorro">
+        </div>
+        <h2>NEVER GORRO</h2>
+        <p>40.000 COP</p>
+        <div class="colores">
+          <span class="color morado"></span>
+        </div>
+      </div>
+</a>
+<a href="../Buzo/buzo.html">
+      <div class="producto">
+        <div class="imagen-producto">
+          <img src="imagenes/SACO.jpg" alt="NEVER Buzo">
+        </div>
+        <h2>NEVER BUZO - UNISEX</h2>
+        <p>70.000 COP</p>
+        <div class="colores">
+          <span class="color negro"></span>
+        </div>
+      </div>
+</a>
+<a href="../Funda/funda.html">
+      <div class="producto">
+        <div class="imagen-producto">
+          <img src="imagenes/CELULAR.jpg" alt="NEVER Funda">
+        </div>
+        <h2>NEVER FUNDA</h2>
+        <p>35.000 COP</p>
+        <div class="colores">
+          <span class="color negro"></span>
+          <span class="color morado"></span>
+        </div>
+      </div>
+</a>
+    </section>
+  </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+              <a href="../index.html">
+                <img src="imagenes/logo-neverblanco.png" alt="Logo Footer" class="uploaded-logo">
+                </a>
+            </div>
+             <div class="social-links">
+  <a href="#" class="social-link text-regular">
+    <img src="imagenes/spoti.png" alt="Spotify"> NEVER_OFICIAL
+  </a>
+  <a href="#" class="social-link text-regular">
+    <img src="imagenes/ig.png" alt="Instagram"> NEVER_COL
+  </a>
+  <a href="#" class="social-link text-regular">
+    <img src="imagenes/tiktok.png" alt="TikTok"> NEVER_OFICIAL
+  </a>
+</div>
+            <div class="footer-links">
+                <h3>ENLACES ÚTILES</h3>
+                <a href="../index.html" class="footer-link">INICIO</a>
+                <a href="../Episodios/episodios.html" class="footer-link">EPISODIOS</a>
+                <a href="../lo_que_hacemos/lo_que_hacemos/loquehacemos.html" class="footer-link">LO QUE SOMOS</a>
+                <a href="../contacto/contacto.html" class="footer-link">CONTÁCTENOS</a>
+                <a href="../apoyanos/apoyanos.html" class="footer-link">APÓYANOS</a>
+            </div>
+            <div class="copyright">
+                COPYRIGHT © 2025 NEVER PODCAST .<br>
+                Prohibida su reproducción total o parcial, o su uso para el desarrollo de programas de inteligencia artificial o aprendizaje automático, así como su traducción a cualquier idioma, sin autorización escrita de su titular.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Funcionalidad para los acordeones
+        document.querySelectorAll('.detail-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const icon = header.querySelector('.detail-icon');
+                
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                    icon.textContent = '+';
+                } else {
+                    content.style.display = 'block';
+                    icon.textContent = '-';
+                }
+            });
+        });
+
+        // Funcionalidad para selector de tallas
+        document.querySelectorAll('.size-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('selected'));
+                btn.classList.add('selected');
+            });
+        });
+
+        // Funcionalidad para selector de colores
+        document.querySelectorAll('.color-option').forEach(option => {
+            option.addEventListener('click', () => {
+                document.querySelectorAll('.color-option').forEach(o => o.classList.remove('selected'));
+                option.classList.add('selected');
+            });
+        });
+    </script>
+</body>
+</html>

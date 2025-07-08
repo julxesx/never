@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="imagenes/icono.ico" type="image/x-icon" />
+  <title>Inicio de sesión</title>
+
+  <!-- Enlace a la fuente Poppins desde Google Fonts con varios pesos -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Enlace al archivo de estilos CSS externo -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Contenedor principal del fondo -->
+  <div class="background">
+
+    <!-- Contenedor del logo principal -->
+    <div class="logo">
+      <a href="../index.html">
+      <img src="imagenes/logo-never.png" alt="Never logo" />
+      </a>
+    </div>
+
+    <!-- Tarjeta de inicio de sesión -->
+    <div class="login-card">
+      <h2 class="text-bold">Iniciar sesión</h2>
+
+      <!-- Iconos para iniciar sesión con redes sociales -->
+      <div class="social-icons">
+        <img src="imagenes/google.png" alt="Google" />
+        <img src="imagenes/x.png" alt="X" />
+        <img src="imagenes/linkedin.png" alt="LinkedIn" />
+      </div>
+
+      <!-- Formulario de inicio de sesión -->
+      <form>
+        <!-- Campo de correo electrónico -->
+        <label for="email" class="text-medium">Tu correo</label>
+        <input type="email" id="email" placeholder="neveroficial@gmail.com" />
+
+        <!-- Campo de contraseña con icono para mostrar/ocultar -->
+        <label for="password" class="text-medium">Contraseña</label>
+        <div class="password-wrapper">
+          <input type="password" id="password" placeholder="********" />
+          <!-- Icono de ojo para mostrar/ocultar contraseña -->
+          <span class="eye-icon" onclick="togglePassword()">
+            <img src="imagenes/ojo.png" alt="Ver contraseña">
+          </span>
+        </div>
+
+        <!-- Enlace para recuperar contraseña -->
+        <a href="#" class="forgot text-regular">¿Olvidaste tu contraseña?</a>
+
+        <!-- Botón para enviar el formulario -->
+        <button type="submit" class="text-semibold">Iniciar sesión</button>
+      </form>
+
+      <!-- Enlace para registrarse si no se tiene cuenta -->
+      <p class="register text-regular">¿No tienes una cuenta? <a href="../Registrarse/register.html">Regístrate</a></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+              <a href="../index.html">
+                <img src="imagenes/LOGO-BLANCO.png" alt="Logo Footer" class="uploaded-logo">
+              </a>  
+            </div>
+            <div class="social-links">
+  <a href="#" class="social-link text-regular">
+    <img src="imagenes/spoti.png" alt="Spotify"> NEVER_OFICIAL
+  </a>
+  <a href="#" class="social-link text-regular">
+    <img src="imagenes/ig.png" alt="Instagram"> NEVER_COL
+  </a>
+  <a href="#" class="social-link text-regular">
+    <img src="imagenes/tiktok.png" alt="TikTok"> NEVER_OFICIAL
+  </a>
+</div>
+            <div class="footer-links">
+                <h3>ENLACES ÚTILES</h3>
+                <a href="../index.html" class="footer-link">INICIO</a>
+                <a href="../Episodios/episodios.html" class="footer-link">EPISODIOS</a>
+                <a href="../lo_que_hacemos/lo_que_hacemos/loquehacemos.html" class="footer-link">LO QUE SOMOS</a>
+                <a href="../contacto/contacto.html" class="footer-link">CONTÁCTENOS</a>
+                <a href="../apoyanos/apoyanos.html" class="footer-link">APÓYANOS</a>
+            </div>
+            <div class="copyright">
+                COPYRIGHT © 2025 NEVER PODCAST .<br>
+                Prohibida su reproducción total o parcial, o su uso para el desarrollo de programas de inteligencia artificial o aprendizaje automático, así como su traducción a cualquier idioma, sin autorización escrita de su titular.
+            </div>
+        </div>
+    </footer>
+
+  <!-- Script para mostrar/ocultar la contraseña -->
+  <script>
+    function togglePassword() {
+      const passwordInput = document.getElementById("password");
+      const type = passwordInput.getAttribute("type");
+      passwordInput.setAttribute("type", type === "password" ? "text" : "password");
+    }
+  </script>
+
+</body>
+</html>

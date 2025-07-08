@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icono.ico" type="image/x-icon">
+    <title>NEVER - Podcast</title>
+    <link rel="stylesheet" href="stylesindex.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- INICIOr -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+             <a href="#">
+                <img src="images/logo-never.png" alt="Logo Header" class="uploaded-logo">
+             </a>
+            </div>
+            <div class="auth-buttons">
+                <a href="Registrarse/register.html" class="register-btn">REGISTRARSE</a>
+                <a href="Login/login.html" class="login-btn">INICIAR SESIÓN</a>
+               <a href="tienda/tienda.html" class="store-btn">🛒 TIENDA</a>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegación -->
+   <nav class="nav-bar">
+  <div class="nav-container">
+    <!-- Botón Hamburguesa (solo visible en mobile) -->
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú de navegación">☰</button>
+
+    <!-- Menú navegable (reutiliza lo que ya tienes) -->
+    <div class="nav-menu" id="navMenu">
+      <a href="Episodios/episodios.html" class="nav-item episodios-link">EPISODIOS</a>
+      <a href="lo_que_hacemos/lo_que_hacemos/loquehacemos.html" class="nav-item">LO QUE HACEMOS</a>
+      <a href="contacto/contacto.html" class="nav-item">CONTÁCTANOS</a>
+      <a href="apoyanos/apoyanos.html" class="nav-item">APÓYANOS</a>
+
+      <div class="search-bar">
+        <button type="submit">
+          <img src="images/lupa-icono.png" alt="Buscar" class="icono-busqueda">
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </div>
+</nav>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-container">
+       
+<!-- HERO -->
+   <section class="hero">
+  <div class="overlay">
+    <div class="textos">
+      <h2><span>BIENVENIDO A</span> <strong>NEVER</strong></h2>
+      <h3><span class="actua">ACTÚA,</span> <span class="cambia">CAMBIA</span> Y <span class="crece">CRECE</span></h3>
+      <a href="Episodios/episodios.html">
+      <button class="btn-escuchar">Empieza A Escucharnos</button>
+      </a>
+    </div>
+  </div>
+  <!-- Aquí agregamos la imagen del ojo como un elemento independiente -->
+  <img src="images/ojooooooooo.png" alt="Ojo" class="ojo-imagen">
+</section>
+    </div>
+  </section>
+
+  <!-- Franja mensaje -->
+  <section class="franja">
+    <h2>ES MOMENTO DE EMPEZAR <span>EL CAMBIO</span></h2>
+  </section>
+
+  <!-- Noticias -->
+  <section class="noticias">
+    <h2 class="titulo-noticias">NOTICIAS</h2>
+    <p>
+      ¡Estuvimos en Corferias! Esta vez fuimos invitados con nuestro
+      <strong>podcast Never</strong> a participar en el evento. Les dejamos un
+      vistazo de nuestro stand.<br />
+      Gracias a los organizadores del evento por la invitación y por hacer
+      parte de esta experiencia increíble.
+    </p>
+
+     <!-- VIDEO -->
+     <div class="video-container">
+  <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/tkx8hXYBmpw"
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</div>
+    </div>
+  </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+              <a href="#">
+                <img src="images/logo-neverblanco.png" alt="Logo Footer" class="uploaded-logo">
+              </a>  
+            </div>
+            <div class="social-links">
+  <a href="#" class="social-link text-regular">
+    <img src="images/spoti.png" alt="Spotify"> NEVER_OFICIAL
+  </a>
+  <a href="#" class="social-link text-regular">
+    <img src="images/ig.png" alt="Instagram"> NEVER_COL
+  </a>
+  <a href="#" class="social-link text-regular">
+    <img src="images/tiktok.png" alt="TikTok"> NEVER_OFICIAL
+  </a>
+</div>
+            <div class="footer-links">
+                <h3>ENLACES ÚTILES</h3>
+                <a href="#" class="footer-link">INICIO</a>
+                <a href="Episodios/episodios.html" class="footer-link">EPISODIOS</a>
+                <a href="lo_que_hacemos/lo_que_hacemos/loquehacemos.html" class="footer-link">LO QUE SOMOS</a>
+                <a href="contacto/contacto.html" class="footer-link">CONTÁCTENOS</a>
+                <a href="apoyanos Oficial/apoyanos Oficial/apoyanos.html" class="footer-link">APÓYANOS</a>
+            </div>
+            <div class="copyright">
+                COPYRIGHT © 2025 NEVER PODCAST .<br>
+                Prohibida su reproducción total o parcial, o su uso para el desarrollo de programas de inteligencia artificial o aprendizaje automático, así como su traducción a cualquier idioma, sin autorización escrita de su titular.
+            </div>
+        </div>
+    </footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('navMenu');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+  });
+</script>
+
+
+</body>
+</html>

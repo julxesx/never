@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icono.ico" type="image/x-icon">
+    <title>NEVER - Tienda</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- INICIO -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="../index.html">
+                <img src="images/logo-never.png" alt="Logo Header" class="uploaded-logo">
+                </a>
+            </div>
+            <div class="auth-buttons">
+                <a href="../Registrarse/register.html" class="register-btn">REGISTRARSE</a>
+                <a href="../Login/login.html" class="login-btn">INICIAR SESIÓN</a>
+                <a href="../tienda/tienda.html">
+                <button class="store-btn">🛒 TIENDA</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegación -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <a href="../tienda/tienda.html" class="nav-item">PRODUCTOS</a>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-container">
+        <div class="product-container">
+            <!-- Imagen del producto -->
+            <div class="product-image">
+                <div class="image-placeholder">
+                <img src="images/buso.jpg" alt="Imagen del buso" class="buso-img">
+                </div>
+            </div>
+            
+            <!-- Información del producto -->
+            <div class="product-info">
+                <h1 class="product-title">NEVER HOODIE-UNISEX</h1>
+                <p class="product-price">$80.000 COP</p>
+                <p class="product-colors">COLORES DISPONIBLES</p>
+                
+                <!-- Selector de colores -->
+                <div class="color-selector">
+                    <div class="color-option purple selected" data-color="purple"></div>
+                    <div class="color-option black" data-color="black"></div>
+                </div>
+                
+                <!-- Selector de talla -->
+                <div class="size-section">
+                    <p class="size-label">SELECCIONAR TALLA</p>
+                    <div class="size-selector">
+                        <button class="size-btn">XS</button>
+                        <button class="size-btn">S</button>
+                        <button class="size-btn">M</button>
+                        <button class="size-btn">L</button>
+                    </div>
+                </div>
+                
+                <!-- Cantidad y botón de compra -->
+                <div class="purchase-section">
+                    <div class="quantity-selector">
+                        <input type="number" value="1" min="1" class="quantity-input">
+                    </div>
+                    <button class="add-to-cart-btn">AÑADIR AL CARRITO</button>
+                </div>
+                
+                <!-- Acordeones de información -->
+                <div class="product-details">
+                    <div class="detail-item">
+                        <button class="detail-header">
+                            MÁS DETALLES
+                            <span class="detail-icon">+</span>
+                        </button>
+                        <div class="detail-content">
+                            <p>Un buso cómodo, moderno y con actitud. 
+                               <p> Confeccionado en algodónsuave y </p>
+                            <p>con un diseño minimalistapero impactante </p>
+                                <p>el logo “Never” estampado al frente.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <button class="detail-header">
+                            MODELOS DISPONIBLES
+                            <span class="detail-icon">+</span>
+                        </button>
+                        <div class="detail-content">
+                            <p>Rosa: Estilo moderno y juvenil con logo en blanco y negro.</p>
+                            <p>Morado: Variante más vibrante y llamativa,
+                            <p> manteniendo el mismo diseño gráfico </p>
+                            <p>y calidad de impresión.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <button class="detail-header">
+                            CALIDAD Y MATERIAL
+                            <span class="detail-icon">+</span>
+                        </button>
+                        <div class="detail-content">
+                            <p>Este buso está confeccionado en una mezcla premium
+                            <p> de algodón y poliéster,  brindando una textura suave, </p>
+                                <p> resistente y cómoda al contacto con la piel. </p>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="../index.html">
+                <img src="images/logo-neverblanco.png" alt="Logo Footer" class="uploaded-logo">
+                </a>
+            </div>
+          <div class="social-links">
+  <a href="#" class="social-link text-regular">
+    <img src="images/spoti.png" alt="Spotify"> NEVER_OFICIAL
+  </a>
+  <a href="#" class="social-link text-regular">
+    <img src="images/ig.png" alt="Instagram"> NEVER_COL
+  </a>
+  <a href="#" class="social-link text-regular">
+    <img src="images/tiktok.png" alt="TikTok"> NEVER_OFICIAL
+  </a>
+</div>
+            <div class="footer-links">
+                <h3>ENLACES ÚTILES</h3>
+                <a href="../index.html" class="footer-link">INICIO</a>
+                <a href="../Episodios/episodios.html" class="footer-link">EPISODIOS</a>
+                <a href="../lo_que_hacemos/lo_que_hacemos/loquehacemos.html" class="footer-link">LO QUE SOMOS</a>
+                <a href="../contacto/contacto.html" class="footer-link">CONTÁCTENOS</a>
+                <a href="../apoyanos/apoyanos.html" class="footer-link">APÓYANOS</a>
+            </div>
+            <div class="copyright">
+                COPYRIGHT © 2025 NEVER PODCAST .<br>
+                Prohibida su reproducción total o parcial, o su uso para el desarrollo de programas de inteligencia artificial o aprendizaje automático, así como su traducción a cualquier idioma, sin autorización escrita de su titular.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Funcionalidad para los acordeones
+        document.querySelectorAll('.detail-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const icon = header.querySelector('.detail-icon');
+                
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                    icon.textContent = '+';
+                } else {
+                    content.style.display = 'block';
+                    icon.textContent = '-';
+                }
+            });
+        });
+
+        // Funcionalidad para selector de tallas
+        document.querySelectorAll('.size-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('selected'));
+                btn.classList.add('selected');
+            });
+        });
+
+        // Funcionalidad para selector de colores
+        document.querySelectorAll('.color-option').forEach(option => {
+            option.addEventListener('click', () => {
+                document.querySelectorAll('.color-option').forEach(o => o.classList.remove('selected'));
+                option.classList.add('selected');
+            });
+        });
+    </script>
+</body>
+</html>
